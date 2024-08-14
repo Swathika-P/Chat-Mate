@@ -10,7 +10,12 @@ require("dotenv").config();
 // Set strictQuery to false to handle the deprecation warning
 mongoose.set('strictQuery', false);
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://chat-mate-swatzz.vercel.app',
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true
+}));
 app.use(express.json());
 
 mongoose
@@ -31,12 +36,14 @@ app.use("/api/messages", messageRoutes);
 const server = app.listen(process.env.PORT, () =>
   console.log(`Server started on ${process.env.PORT}`)
 );
-const io = socket(server, {
+const io = require('socket.io')(server, {
   cors: {
-    origin: "https://chat-mate-b00m.onrender.com/",
-    credentials: true,
-  },
+      origin: "https://chat-mate-swatzz.vercel.app",
+      methods: ["GET", "POST"],
+      credentials: true
+  }
 });
+
 
 global.onlineUsers = new Map();
 io.on("connection", (socket) => {

@@ -1,6 +1,6 @@
 # Chat Mate
 
-![Chat Mate Logo](client\src\assets\logo.svg) 
+![Chat Mate Logo](client/src/assets/logo.svg) 
 
 **Live Demo:** [Chat Mate Live](https://chat-mate-swatzz.vercel.app/) 
 ## Table of Contents
@@ -37,16 +37,17 @@ Chat Mate is a real-time chat application that facilitates instant user communic
 ## Screenshots
 
 ### 1. Login Page
-![Login Page](client\src\assets\Loginpage.png)
+![Login Page](client/src/assets/Loginpage.png)
 
 ### 2. Register Page
-![Register Page](client\src\assets\Registerpage.png)
+![Register Page](client/src/assets/Registerpage.png)
 
 ### 3. Avatar Selection Page
-![Avatar Page](client\src\assets\Avatarpage.png)
+![Avatar Page](client/src/assets/Avatarpage.png)
 
 ### 4. Chat Page
-![Chat Page](client\src\assets\Chatpage.png)
+![Chat Page](client/src/assets/Chatpage.png)
+
 
 ## Getting Started
 

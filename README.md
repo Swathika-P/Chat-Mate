@@ -1,6 +1,7 @@
 # Chat Mate
 
-![Chat Mate Logo](client/src/assets/logo.svg) 
+### Logo
+<img src="client/src/assets/logo.svg" alt="Chat Mate Logo" width="200"/>
 
 **Live Demo:** [Chat Mate Live](https://chat-mate-swatzz.vercel.app/) 
 ## Table of Contents
